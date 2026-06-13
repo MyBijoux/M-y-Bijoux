@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>m’y bijoux - Bijoux de téléphone faits main</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" onclick="goHome()">
+      <span class="logo">m’y</span>
+      <div>
+        <strong>m’y bijoux</strong>
+        <small>Bijoux de téléphone faits main</small>
+      </div>
+    </div>
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Rechercher un bijou..." />
+    </div>
+    <a class="contact-top" id="whatsappTop" href="#">Contact</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <span class="pill">Créations artisanales</span>
+      <h1>Des bijoux de téléphone uniques, doux et élégants.</h1>
+      <p>Découvrez les créations m’y bijoux : céramique, acrylique, perles en verre, silicone et modèles personnalisés.</p>
+      <a href="#catalogue" class="hero-btn">Voir les bijoux</a>
+    </div>
+    <div class="hero-card">
+      <div class="phone-charm">♡</div>
+      <h3>Personnalisation possible</h3>
+      <p>Choix des couleurs, du prénom et du style selon les envies.</p>
+    </div>
+  </section>
+
+  <main id="catalogue" class="layout">
+    <aside class="filters">
+      <h3>Filtres</h3>
+      <label><input type="radio" name="matiere" value="Tous" checked> Tous</label>
+      <label><input type="radio" name="matiere" value="Céramique"> Céramique</label>
+      <label><input type="radio" name="matiere" value="Acrylique"> Acrylique</label>
+      <label><input type="radio" name="matiere" value="Perles en verre"> Perles en verre</label>
+      <label><input type="radio" name="matiere" value="Peint à l'huile"> Peint à l’huile</label>
+      <label><input type="radio" name="matiere" value="Silicone"> Silicone</label>
+      <div class="help-box">
+        <strong>Besoin d’un modèle précis ?</strong>
+        <p>Contactez-nous pour une création personnalisée.</p>
+        <a id="whatsappSide" href="#">WhatsApp</a>
+      </div>
+    </aside>
+
+    <section class="products-zone">
+      <div class="section-head">
+        <div>
+          <h2>Catalogue</h2>
+          <p id="countText">Chargement des produits...</p>
+        </div>
+      </div>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <div id="productModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close" onclick="closeProduct()">×</button>
+      <div class="detail-grid">
+        <div class="detail-image-wrap">
+          <img id="detailImage" alt="Produit" />
+        </div>
+        <div class="detail-info">
+          <span id="detailStock" class="stock"></span>
+          <h2 id="detailName"></h2>
+          <p id="detailMaterial" class="detail-material"></p>
+          <p id="detailPrice" class="detail-price"></p>
+          <p id="detailDescription" class="detail-description"></p>
+          <div class="detail-actions">
+            <a id="detailWhatsapp" class="main-action" href="#">Commander / demander des infos</a>
+            <a id="detailEmail" class="secondary-action" href="#">Envoyer un email</a>
+          </div>
+          <div class="review-box">
+            <h3>Laisser un avis</h3>
+            <input id="reviewName" placeholder="Votre prénom" />
+            <select id="reviewRating">
+              <option value="5">★★★★★ - 5</option>
+              <option value="4">★★★★☆ - 4</option>
+              <option value="3">★★★☆☆ - 3</option>
+              <option value="2">★★☆☆☆ - 2</option>
+              <option value="1">★☆☆☆☆ - 1</option>
+            </select>
+            <textarea id="reviewText" placeholder="Votre avis"></textarea>
+            <button onclick="addReview()">Publier l’avis</button>
+            <div id="reviewsList" class="reviews-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <h2>Contact</h2>
+    <p>Une question, une personnalisation ou une commande ? Contactez m’y bijoux directement.</p>
+    <div class="contact-buttons">
+      <a id="whatsappBottom" href="#">WhatsApp</a>
+      <a id="emailBottom" href="#">Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <strong>m’y bijoux</strong> — Bijoux de téléphone faits main avec amour.
+  </footer>
+
+  <a id="floatingWhatsapp" class="floating-whatsapp" href="#">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

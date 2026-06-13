@@ -1,0 +1,26 @@
+[
+  {
+    "nom": "Bijou Coeur Rose",
+    "prix": "14,90 €",
+    "matiere": "Perles en verre",
+    "description": "Bijou de téléphone fait main, doux et élégant, idéal pour personnaliser son téléphone.",
+    "image": "produit1.svg",
+    "stock": "Disponible"
+  },
+  {
+    "nom": "Bijou Nacré",
+    "prix": "19,90 €",
+    "matiere": "Céramique",
+    "description": "Modèle raffiné avec un style chic et féminin, parfait pour offrir ou se faire plaisir.",
+    "image": "produit2.svg",
+    "stock": "Disponible"
+  },
+  {
+    "nom": "Bijou Personnalisé",
+    "prix": "22,90 €",
+    "matiere": "Acrylique",
+    "description": "Bijou personnalisable avec prénom, couleurs ou style selon votre envie.",
+    "image": "produit3.svg",
+    "stock": "Sur commande"
+  }
+]
