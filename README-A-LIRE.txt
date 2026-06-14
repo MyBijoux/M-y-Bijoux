@@ -24,3 +24,4 @@ IMPORTANT :
 - Ne pas oublier les virgules entre les produits
 - Les photos doivent être dans le dossier images
 mise à jour
+.
